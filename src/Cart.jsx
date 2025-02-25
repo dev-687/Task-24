@@ -36,7 +36,7 @@ function Cart({ cartItems, removeFromCart, addToCart }) {
 
             <div className="mt-2 text-center">
                 {
-                    location.pathname === '/' && (
+                    location.pathname === '/' &&  cartItems.length > 0 && (
                         <NavLink
                             to="/payment"
                             type="button"
